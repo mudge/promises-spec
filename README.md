@@ -1,14 +1,12 @@
 # Promises/A+
 
-This proposal clarifies the behavioral clauses of the [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), extending it to cover *de facto* behaviors and omitting parts that are underspecified or problematic.
+A *promise* represents the eventual result of an asynchronous operation. The primary way of interacting with a promise is through its `then` method, which registers callbacks to receive either a promise's eventual value or the reason why the promise cannot be fulfilled.
 
-As with Promises/A, this proposal does not deal with how to create, fulfill, or reject promises.
+This specification details the behavior of this `then` method, providing an interoperable base which all Promises/A+ conformant promise implementations can be depended on to provide. As such, the specification should be considered very stable. Although it may be occasionally revised with minor backward-compatible changes to specify newly-discovered corner cases, any large or backward-incompatible changes will be avoided.
 
-For a full description of the differences between Promises/A+ and Promises/A, see [Differences from Promises/A](differences-from-promises-a.md).
+Historically, Promises/A+ clarifies the behavioral clauses of the earlier [Promises/A proposal](http://wiki.commonjs.org/wiki/Promises/A), extending it to cover *de facto* behaviors and omitting parts that are underspecified or problematic.
 
-## General
-
-A promise represents a value that may not be available yet. The primary method for interacting with a promise is its `then` method.
+Finally, we note that Promises/A+ does not deal with how to create, fulfill, or reject promises.
 
 ## Terminology
 
